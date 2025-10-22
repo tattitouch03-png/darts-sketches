@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import GalleryPage from './components/GalleryPage';
+import WhatsAppButton from './components/WhatsAppButton';
 
 type View = 'home' | 'gallery';
 
@@ -64,6 +65,8 @@ function App() {
       ) : (
         <GalleryPage categoryId={selectedCategory} onBack={handleBackToHome} />
       )}
+
+      <WhatsAppButton />
     </div>
   );
 }
